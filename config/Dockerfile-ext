@@ -1,0 +1,26 @@
+#
+# Start from GridGain version 8:4:4
+FROM gridgain/gridgain-ent:8.4.4
+
+ENV PRODUCT gridgain
+# Set GridGain version
+ENV GRIDGAIN_VERSION 8.4.4
+# Set GridGain edition
+ENV GRIDGAIN_EDITION enterprise
+# Set Ignite binary name
+ENV GRIDGAIN_BIN ${PRODUCT}-${GRIDGAIN_EDITION}-fabric-${GRIDGAIN_VERSION}
+# Set Ignite home directory
+ENV IGNITE_HOME /opt/${PRODUCT}/${GRIDGAIN_BIN}
+
+# Set working directory
+WORKDIR /opt/${PRODUCT}
+
+# Set Product name
+#ENV IMAGE_FOLDER gridgain_image
+
+# Copy sh files and set permission
+COPY ./startIgnite.sh ${IGNITE_HOME}/
+
+CMD ${IGNITE_HOME}/startIgnite.sh
+
+EXPOSE 11211 47100 47500 49112

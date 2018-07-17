@@ -1,0 +1,12 @@
+#Start from GridGain version 8:4:4
+FROM gridgain/gridgain-ent:8.4.4
+
+# Set Product name
+ENV IMAGE_FOLDER gridgain_image
+
+
+# Set working directory
+#WORKDIR /home/veluri/${IMAGE_FOLDER}
+
+
+EXPOSE 11211 47100 47500 49112

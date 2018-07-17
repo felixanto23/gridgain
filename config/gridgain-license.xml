@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gridgain-license version="2.1">
+    <id>80be523c-701d-4ef7-bc8f-7426428db694</id>
+    <issue-date>11/30/2017</issue-date>
+    <maintenance-time>0</maintenance-time>
+    <user-org>Multiplan, Inc.</user-org>
+    <license-note>Enterprise license for Multiplan, Inc.</license-note>
+    <user-www>http://multiplan.com</user-www>
+    <user-email>ganesh.srivatsav@multiplan.com</user-email>
+    <user-name>Ganesh Srivatsav</user-name>
+    <type>ENT</type>
+    <expire-date>05/14/2020</expire-date>
+    <max-nodes>0</max-nodes>
+    <max-cpus>78</max-cpus>
+    <max-computers>0</max-computers>
+    <grace-period>86400</grace-period>
+    <max-uptime>0</max-uptime>
+    <signature>302C02143A784B19F822AC8DD9BE4B6BA6744C7A6D34CA8302142E43990B8CF828E0F76AC5186ADE1AC058DF3764</signature>
+</gridgain-license>
