@@ -42,9 +42,9 @@ ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-clu
 ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
 ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
 ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
+ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
 
 # Copy sh files and set permission
-COPY ./startIgnite.sh ${IGNITE_HOME}/
 CMD ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
 
 EXPOSE 11211 47100 47500 49112
