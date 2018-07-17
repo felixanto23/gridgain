@@ -1,20 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @felixanto23 Sign out
-0
-0 0 felixanto23/pipelinepoc
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-pipelinepoc/Dockerfile
-8bb9109  5 days ago
-@felixanto23 felixanto23 Create Dockerfile
-     
-54 lines (40 sloc)  2.1 KB
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
