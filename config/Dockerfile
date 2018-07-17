@@ -1,3 +1,20 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @felixanto23 Sign out
+0
+0 0 felixanto23/pipelinepoc
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+pipelinepoc/Dockerfile
+8bb9109  5 days ago
+@felixanto23 felixanto23 Create Dockerfile
+     
+54 lines (40 sloc)  2.1 KB
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -36,15 +53,12 @@ RUN set -x && \
     rm -rfv gridgain.zip
 
 
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/gridgain-license.xml ${IGNITE_HOME}/
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/data-node-log4j.xml  ${IGNITE_HOME}/
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
-ADD http://svn.multiplan.com/repos/java/DEV_OPS/Docker/GridgainCustomImageConfig/branches/1_0/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
-
-
-
+ADD https://github.com/felixanto23/gridgain/tree/master/config/gridgain-license.xml ${IGNITE_HOME}/
+ADD https://github.com/felixanto23/gridgain/tree/master/config/data-node-log4j.xml  ${IGNITE_HOME}/
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
 
 # Copy sh files and set permission
 COPY ./startIgnite.sh ${IGNITE_HOME}/
