@@ -26,8 +26,8 @@
 				class="org.apache.ignite.spi.discovery.tcp.ipfinder.vm.TcpDiscoveryVmIpFinder">
 				<property name="addresses">
 					<list>
-						<value>10.200.152.9:47500..47510</value>
-						<value>10.200.152.10:47500..47510</value>
+						<value>10.200.152.57:47500..47510</value>
+						<value>10.200.152.50:47500..47510</value>
 					</list>
 				</property>
 			</bean>
