@@ -11,6 +11,8 @@
 
 
 FROM oraclelinux
+ARG ENV
+ARG NODE
 USER root
 # Set Product name
 ENV PRODUCT gridgain
