@@ -11,7 +11,7 @@
 
 
 FROM oraclelinux
-USER ROOT
+USER root
 # Set Product name
 ENV PRODUCT gridgain
 # Set GridGain version
