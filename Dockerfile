@@ -48,6 +48,6 @@ ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PRO
 ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
 
 # Copy sh files and set permission
-CMD sudo -u root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
+CMD ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
 
 EXPOSE 11211 47100 47500 49112
