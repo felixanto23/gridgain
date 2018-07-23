@@ -16,8 +16,6 @@ ARG NODE
 
 #create a directory
 RUN mkdir -p /poc/
-#Volume
-VOLUME /poc
 # Set Product name
 ENV PRODUCT gridgain
 # Set GridGain version
