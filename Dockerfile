@@ -13,7 +13,11 @@
 FROM oraclelinux
 ARG ENV
 ARG NODE
-USER root
+
+#create a directory
+RUN mkdir -p /poc/
+#Volume
+VOLUME /poc
 # Set Product name
 ENV PRODUCT gridgain
 # Set GridGain version
@@ -23,10 +27,10 @@ ENV GRIDGAIN_EDITION enterprise
 # Set Ignite binary name
 ENV GRIDGAIN_BIN ${PRODUCT}-${GRIDGAIN_EDITION}-fabric-${GRIDGAIN_VERSION}
 # Set Ignite home directory
-ENV IGNITE_HOME /opt/${PRODUCT}/${GRIDGAIN_BIN}
+ENV IGNITE_HOME /poc/${PRODUCT}/${GRIDGAIN_BIN}
 
 # Set working directory
-WORKDIR /opt/${PRODUCT}
+WORKDIR /poc/${PRODUCT}
 
 # Add missing software
 RUN yum update -y && \
@@ -48,6 +52,6 @@ ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PRO
 ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
 
 # Copy sh files and set permission
-CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
-
+#CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
+RUN chmod +x ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
 EXPOSE 11211 47100 47500 49112
