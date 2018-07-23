@@ -37,8 +37,7 @@ RUN yum update -y && \
     yum install zip unzip wget jre -y
 
 # Get binary archive
-RUN set -x && \
-    wget -c "https://gridgain.com/media/${GRIDGAIN_BIN}.zip" -O gridgain.zip && \
+RUN wget -c "https://gridgain.com/media/${GRIDGAIN_BIN}.zip" -O gridgain.zip && \
     unzip gridgain.zip && \
     rm -rfv gridgain.zip
 
