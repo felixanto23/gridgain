@@ -50,7 +50,7 @@ ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA
 ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config/multiplan-ucw-PROD-cluster-config.xml
 ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/startIgnite.sh
 
-RUN ls
+RUN pwd
 # Copy sh files and set permission
 #CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
 RUN chmod +x ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
