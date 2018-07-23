@@ -42,12 +42,12 @@ RUN wget -c "https://gridgain.com/media/${GRIDGAIN_BIN}.zip" -O gridgain.zip && 
     rm -rfv gridgain.zip
 
 
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/gridgain-license.xml ${IGNITE_HOME}/
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/data-node-log4j.xml  ${IGNITE_HOME}/
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
+ADD https://github.com/felixanto23/gridgain/tree/master/config/gridgain-license.xml ${IGNITE_HOME}/gridgain-license.xml
+ADD https://github.com/felixanto23/gridgain/tree/master/config/data-node-log4j.xml  ${IGNITE_HOME}/data-node-log4j.xml
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config/multiplan-ucw-cluster-config.xml
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config/multiplan-ucw-DEV-cluster-config.xml
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config/multiplan-ucw-SQA-cluster-config.xml
+ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config/multiplan-ucw-PROD-cluster-config.xml
 ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/startIgnite.sh
 
 RUN ls
