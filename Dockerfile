@@ -51,6 +51,7 @@ RUN set -x && \
 #ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
 #ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
 
+RUN ls
 # Copy sh files and set permission
 #CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
 RUN chmod +x ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
