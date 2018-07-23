@@ -48,7 +48,7 @@ RUN wget -c "https://gridgain.com/media/${GRIDGAIN_BIN}.zip" -O gridgain.zip && 
 #ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
 #ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
 #ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
-#ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
+ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/startIgnite.sh
 
 RUN ls
 # Copy sh files and set permission
