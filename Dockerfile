@@ -43,13 +43,13 @@ RUN set -x && \
     rm -rfv gridgain.zip
 
 
-ADD https://github.com/felixanto23/gridgain/tree/master/config/gridgain-license.xml ${IGNITE_HOME}/
-ADD https://github.com/felixanto23/gridgain/tree/master/config/data-node-log4j.xml  ${IGNITE_HOME}/
-ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config
-ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
-ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
-ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
-ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/gridgain-license.xml ${IGNITE_HOME}/
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/data-node-log4j.xml  ${IGNITE_HOME}/
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-cluster-config.xml ${IGNITE_HOME}/config
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-DEV-cluster-config.xml ${IGNITE_HOME}/config
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-SQA-cluster-config.xml ${IGNITE_HOME}/config
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/multiplan-ucw-PROD-cluster-config.xml ${IGNITE_HOME}/config
+#ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${IGNITE_HOME}/
 
 # Copy sh files and set permission
 #CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
