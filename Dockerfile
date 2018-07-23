@@ -53,5 +53,5 @@ ADD https://github.com/felixanto23/gridgain/tree/master/config/startIgnite.sh ${
 RUN pwd
 # Copy sh files and set permission
 #CMD su -c root ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
-RUN chmod +x ${IGNITE_HOME}/startIgnite.sh $ENV $NODE
+RUN chmod +x ${IGNITE_HOME}/startIgnite.sh
 EXPOSE 11211 47100 47500 49112
